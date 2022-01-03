@@ -1,13 +1,14 @@
-// Indicamos la versión
+// Solidity's compiler version
 pragma solidity ^0.8.0;
 
-// ¿Que haría el contrato? --> ...
+// Com: What the contract will do
 contract PrimerContrato {
-    //Funcion msg.sender
+    //Function msg.sender
     function MsgSender() public view returns (address) {
         return msg.sender;
     }
 
+    // Function
     function BlockCoinbase() public view returns (address) {
         return block.coinbase;
     }
